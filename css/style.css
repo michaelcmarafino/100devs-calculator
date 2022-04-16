@@ -1,0 +1,102 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     display: grid;
+     place-content: center;
+     height: 100vh;
+     color: black;
+}
+
+a {
+     text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.calculator {
+     width: 28rem;
+     height: 38rem;
+     background: #000;
+     border-radius: 30px;
+}
+
+.insideContainer {
+     padding: 3rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.calculatorScreen {
+     width: 100%;
+     padding: 1rem; 
+     font-size: 2.5rem;
+     background: #fff;
+}
+
+.calculatorBtns {
+     display: flex;
+     flex-wrap: wrap;
+     padding-top: 2rem;
+     justify-content: center;
+     align-items: center;
+}
+
+a {
+     width: 4rem;
+     height: 4rem;
+     border-radius: 50%;
+     background: #fff;
+     margin: .5rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2rem;
+     color: black;
+}
+
+a:hover{
+     background: #d6d6d6;
+}
+
+a:nth-of-type(16) {
+     color: white;
+     background: red;
+}
+
+a:nth-of-type(16):hover {
+     color: black;
+}
+
+a:last-of-type {
+     width: 85%;
+     border-radius: 30px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
