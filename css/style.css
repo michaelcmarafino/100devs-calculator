@@ -56,6 +56,7 @@ a {
      padding: 1rem; 
      font-size: 2.5rem;
      background: #fff;
+     text-align: right;
 }
 
 .calculatorBtns {
@@ -66,7 +67,7 @@ a {
      align-items: center;
 }
 
-a {
+button {
      width: 4rem;
      height: 4rem;
      border-radius: 50%;
@@ -77,22 +78,23 @@ a {
      align-items: center;
      font-size: 2rem;
      color: black;
+     border: none;
 }
 
-a:hover{
+button:hover{
      background: #d6d6d6;
 }
 
-a:nth-of-type(16) {
+button:nth-of-type(16) {
      color: white;
      background: red;
 }
 
-a:nth-of-type(16):hover {
+button:nth-of-type(16):hover {
      color: black;
 }
 
-a:last-of-type {
+button:last-of-type {
      width: 85%;
      border-radius: 30px;
 }
